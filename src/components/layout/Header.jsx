@@ -21,12 +21,12 @@ function Header() {
       <div className="container-fluid header-container">
         <div className="logo-container">
           <Link to="/" className="text-white text-decoration-none d-flex align-items-center">
-            <img 
-              src="/images/european-hare-6121jpg.webp" 
-              alt="Заєць" 
+            <img
+              src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7bGjcuWBJ4w5S6z8sZkf_k6hR7nQgzNj-8YvgrSmenXkn4Alr3tTHNkAsCxqrhttps://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7bGjcuWBJ4w5S6z8sZkf_k6hR7nQgzNj-8YvgrSmenXkn4Alr3tTHNkAsCxqr" // Шлях до нового зображення їжака
+              alt="Їжак"
               className="site-logo rounded-circle me-2"
             />
-            <span className="fs-4">Сайт про зайців</span>
+            <span className="fs-4">Сайт про їжаків</span>
           </Link>
         </div>
 
@@ -35,16 +35,16 @@ function Header() {
             Головна
           </Link>
           <Link to="/morphology" className={`nav-link text-white ${location.pathname === '/morphology' ? 'active' : ''}`}>
-            Зовнішній вигляд зайців
+            Зовнішній вигляд їжаків
           </Link>
           <Link to="/nutrition" className={`nav-link text-white ${location.pathname === '/nutrition' ? 'active' : ''}`}>
-            Харчування зайців
+            Харчування їжаків
           </Link>
           <Link to="/population" className={`nav-link text-white ${location.pathname === '/population' ? 'active' : ''}`}>
-            Ареал зайців
+            Ареал їжаків
           </Link>
           <Link to="/photo" className={`nav-link text-white ${location.pathname === '/photo' ? 'active' : ''}`}>
-            Фотографії зайців
+            Фотографії їжаків
           </Link>
         </nav>
 

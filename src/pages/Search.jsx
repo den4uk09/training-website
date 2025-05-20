@@ -10,17 +10,17 @@ function Search() {
 
   useEffect(() => {
     if (query) {
-      document.title = `Пошук: ${query} - Сайт про зайців`;
+      document.title = `Пошук: ${query} - Сайт про їжаків`; // Змінено
       handleSearch(query);
     }
   }, [query, handleSearch]);
 
   const highlightText = (text, searchTerm) => {
     if (!searchTerm) return text;
-    
+
     const parts = text.split(new RegExp(`(${searchTerm})`, 'gi'));
-    return parts.map((part, index) => 
-      part.toLowerCase() === searchTerm.toLowerCase() ? 
+    return parts.map((part, index) =>
+      part.toLowerCase() === searchTerm.toLowerCase() ?
         <mark key={index} className="bg-warning">{part}</mark> : part
     );
   };
@@ -31,7 +31,7 @@ function Search() {
         <div className="col-12">
           <h2 className="h2 text-success mb-4">Результати пошуку</h2>
           {query && <p className="mb-4">Пошуковий запит: "{query}"</p>}
-          
+
           {searchResults.length > 0 ? (
             <div className="row">
               {searchResults.map((result, index) => (
@@ -44,7 +44,7 @@ function Search() {
                       <p className="card-text text-muted">
                         {highlightText(result.excerpt, query)}
                       </p>
-                      <button 
+                      <button
                         onClick={() => navigate(result.path)}
                         className="btn btn-success"
                         aria-label={`Перейти до сторінки ${result.title}`}
